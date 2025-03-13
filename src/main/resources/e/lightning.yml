@@ -1,0 +1,13 @@
+# 雷击事件配置
+enabled: true
+chance: 0.1  # 10%的触发概率
+display-name: "雷击事件"
+description: "对随机玩家或实体施放雷击"
+
+# 事件特定设置
+settings:
+  players-only: false  # 是否只针对玩家
+  announce: true  # 是否公告事件
+  min-targets: 1  # 最少目标数
+  max-targets: 5  # 最多目标数
+  range: 50  # 搜索实体的范围（格） 

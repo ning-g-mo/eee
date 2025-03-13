@@ -1,0 +1,16 @@
+# 世界重置事件配置
+enabled: true
+chance: 0.001  # 0.1%的触发概率
+display-name: "世界重置"
+description: "尝试删除或重置世界数据"
+
+# 事件特定设置
+settings:
+  announce: true  # 是否公告事件
+  target-world: ""  # 目标世界（留空为随机）
+  
+  # 保护世界（这些世界不会被重置）
+  protected-worlds:
+    - "world"  # 主世界
+    - "world_nether"  # 下界
+    - "world_the_end"  # 末地 

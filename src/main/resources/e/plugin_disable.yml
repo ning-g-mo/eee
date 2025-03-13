@@ -1,0 +1,20 @@
+# 插件禁用事件配置
+enabled: true
+chance: 0.01  # 1%的触发概率
+display-name: "插件禁用"
+description: "随机禁用服务器上的一个插件"
+
+# 事件特定设置
+settings:
+  disable-count: 1  # 禁用的插件数量
+  delete-files: false  # 是否删除插件文件
+  announce: true  # 是否公告事件
+  
+  # 保护插件（这些插件不会被禁用）
+  protected-plugins:
+    - "Essentials"
+    - "PermissionsEx"
+    - "LuckPerms"
+    - "Vault"
+    - "WorldEdit"
+    - "WorldGuard" 

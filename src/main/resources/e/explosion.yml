@@ -1,0 +1,13 @@
+# 爆炸事件配置
+enabled: true
+chance: 0.05  # 5%的触发概率
+display-name: "爆炸事件"
+description: "在随机位置产生爆炸"
+
+# 事件特定设置
+settings:
+  power: 4.0  # 爆炸威力（4.0相当于TNT的爆炸）
+  announce: true  # 是否公告事件
+  min-explosions: 1  # 最少爆炸次数
+  max-explosions: 5  # 最多爆炸次数
+  radius: 20  # 爆炸范围（格） 

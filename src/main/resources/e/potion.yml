@@ -1,0 +1,26 @@
+# 负面药水效果事件配置
+enabled: true
+chance: 0.2  # 20%的触发概率
+display-name: "负面药水"
+description: "给玩家施加负面药水效果"
+
+# 事件特定设置
+settings:
+  effect-count: 3  # 每个玩家获得的效果数量
+  duration: 600  # 效果持续时间（tick）
+  max-amplifier: 2  # 最高效果等级（0开始）
+  announce: true  # 是否公告事件
+  
+  # 效果权重（权重越高越容易被选中）
+  effect-weights:
+    BLINDNESS: 80
+    CONFUSION: 70
+    HARM: 40
+    HUNGER: 90
+    POISON: 100
+    SLOW: 100
+    SLOW_DIGGING: 80
+    WEAKNESS: 90
+    WITHER: 30
+    UNLUCK: 60
+    LEVITATION: 50 

@@ -1,0 +1,25 @@
+# 恶性事件插件配置文件
+# 作者：柠枺
+# 问题反馈&讨论群：603902151
+
+# 是否启用恶性事件系统
+events-enabled: true
+
+# 事件触发间隔（以tick为单位，20 tick = 1秒）
+event-trigger-interval: 1200  # 默认1分钟
+
+# 破坏性事件的触发概率（0-1之间）
+# 警告：这些事件可能会导致服务器不稳定或无法启动
+server-destroy-chance: 0.001  # 默认0.1%的概率
+
+# 调试模式（会输出更多日志）
+debug: false
+
+# 消息设置
+messages:
+  prefix: "§c【恶性事件】"
+  event-trigger: "%prefix% §4%event_name% §c已被触发！"
+  event-warning: "%prefix% §4警告：这是一个破坏性事件！"
+  event-disabled: "%prefix% §e事件 %event_name% 已被禁用"
+  event-enabled: "%prefix% §a事件 %event_name% 已被启用"
+  no-permission: "%prefix% §c你没有权限执行此命令！" 

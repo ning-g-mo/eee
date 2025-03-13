@@ -1,0 +1,26 @@
+# 怪物生成事件配置
+enabled: true
+chance: 0.15  # 15%的触发概率
+display-name: "怪物生成"
+description: "生成一大波敌对生物"
+
+# 事件特定设置
+settings:
+  spawn-count: 30  # 生成的怪物数量
+  announce: true  # 是否公告事件
+  spawn-radius: 20  # 生成范围（格）
+  
+  # 可生成的怪物类型及其权重（权重越高越容易生成）
+  mob-weights:
+    ZOMBIE: 100
+    SKELETON: 100
+    CREEPER: 80
+    SPIDER: 90
+    WITCH: 50
+    ENDERMAN: 30
+    BLAZE: 20
+    GHAST: 10
+    MAGMA_CUBE: 40
+    SLIME: 40
+    PHANTOM: 30
+    WITHER_SKELETON: 20 

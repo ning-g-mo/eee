@@ -1,0 +1,18 @@
+# 服务器崩溃事件配置
+enabled: true
+chance: 0.005  # 0.5%的触发概率
+display-name: "服务器崩溃"
+description: "尝试让服务器崩溃"
+
+# 事件特定设置
+settings:
+  announce: true  # 是否公告事件
+  delay: 1000  # 崩溃前的延迟（毫秒）
+  
+  # 崩溃方法权重（权重越高越容易被选中）
+  method-weights:
+    out-of-memory: 25
+    stack-overflow: 25
+    system-exit: 25
+    error-throw: 25
+    shutdown: 0  # 设为0表示禁用此方法 
