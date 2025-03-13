@@ -18,7 +18,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
+      packages: write
     steps:
       - uses: actions/checkout@v4
       
@@ -41,13 +42,4 @@ jobs:
         with:
           name: EEE-${{ steps.hash.outputs.hash }}
           path: target/eee-*.jar
-          
-      - name: Create Release
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: ${{ steps.hash.outputs.hash }}
-          name: Build ${{ steps.hash.outputs.hash }}
-          files: target/eee-*.jar
-          prerelease: false
-          generate_release_notes: true 
+          retention-days: 90 
